@@ -45,6 +45,13 @@
 			"code":"a = [5,4,3,2,1];\npos = arrayFind(a, function(item) {\n\treturn item == 2;\n});\nwriteOutput(pos);",
 			"result":"4",
 			"runnable":true
+		},
+		{
+			"title": "Using arrayFind with a closure / callback function on an array of structs/objects",
+			"description": "CF10+ Lucee4.5+ Using array.find(function(item) {return item.key == \"value\"}) and return the first index that matches. To return all matching indexes, use <a href=\"https://cfdocs.org/arrayfindall\" target=\"_blank\">arrayFindAll</a>.",
+			"code": "foods = [{name: \"orange\", type: \"fruit\"}, {name: \"pineapple\", type: \"fruit\"}, {name: \"carrot\", type: \"vegetable\"}];\nWriteOutput(foods.find(function(food) {return food.type == \"fruit\");",
+			"result": "1",
+			"runnable": true
 		}
 	]
 }
